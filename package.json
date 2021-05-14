@@ -1,0 +1,36 @@
+{
+  "name": "ts-rollup-design-system",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/highalps/ts-rollup-design-system.git",
+  "author": "highalps <highalps93@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "yarn run clean && yarn run build:rollup",
+    "build:rollup": "rollup -c"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.0",
+    "@babel/plugin-transform-runtime": "^7.13.15",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-image": "^2.0.6",
+    "@rollup/plugin-node-resolve": "^13.0.0",
+    "@types/react": "^17.0.5",
+    "prettier": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.47.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "classnames": "^2.3.1"
+  }
+}
